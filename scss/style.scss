@@ -197,23 +197,26 @@ h6 {
 			width: 70%;
 			transform: scale(1) translate(0px, -50%);
 		}
+		&__icon._active span {
+			transform: scale(0) translate(0px, -50%);
+		}
+		&__icon._active::before {
+			top: 50%;
+			transform: rotate(-45deg) translate(0px, -50%);
+		}
+		&__icon._active::after {
+			width: 100%;
+			bottom: 50%;
+			transform: rotate(45deg) translate(0px, 50%);
+		}
 		@media (max-width: 575px) {
 			max-width: 510px;
-			
-			&__icon:active .header-menu__list {
-				.header-menu__list {
-					display: block;
-					display: flex;
-					flex-direction: column;
-				}
-			}
 		}
-		
 	}
 
 	// .header-menu__items
 
-	&__items {
+	&__body {
 		max-width: 825px;
 		flex: 1 1 825 / 1920 * 100%;
 		font-family: "Open Sans Condensed";
@@ -427,28 +430,24 @@ h6 {
 	flex: 0 0 150px;
 	background: #333333;
 	opacity: 75%;
-	position: fixed;
+	position: absolute;
 	z-index: 2;
 	@media (max-width: 1280px) {
 		min-height: 800px;
 	}
 	@media (max-width: 767px) {
-		position: static;
-		display: none;
-		/*display: flex;
-		flex-direction: column-reverse;
-		flex: 1 1 300px;
-		max-width: 300px;
-		height: 800px;
-		position: relative;
+		position: absolute;
 		top: 0;
-		left: 0px;
-		opacity: 50%;
-		z-index: 2;*/
-	}
-	@media (max-width: 575px) {
-		position: static;
-		display: none;
+		left: -100%;
+		width: 300px;
+		height: 800px;
+		background: #333333;
+		transition: left 0.3s ease 0s;
+		opacity: 100%;
+		z-index: 2;
+		&._active {
+			left: 0;
+		}
 	}
 }
 .footer-content {
@@ -457,15 +456,35 @@ h6 {
 	align-items: center;
 	width: 150px;
 	margin: 450px 0;
-	@media (max-width: 1380px) {
+	&__list {
+		display: none;
+	}
+	@media (max-width: 1440px) {
 		margin: 180px 0;
 	}
 	@media (max-width: 767px) {
+		width: 300px;
 		&__info {
 			display: none;
 		}
-		.header-menu__list {
+		&__list {
 			display: block;
+			width: 300px;
+			font-family: "Open Sans Condensed";
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 33px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			li {
+				margin: 0 0 35px 28px;
+			}
+			li:last-child {
+				margin: 0 0 0 28px;
+			}
+			a {
+				color: #ffffff;
+			}
 		}
 	}
 
@@ -502,6 +521,9 @@ h6 {
 				transform: scale(1.2, 1.2);
 			}
 		}
+		@media (max-width: 767px) {
+			margin: 0;
+		}
 	}
 
 	// .footer-content__social
@@ -516,7 +538,7 @@ h6 {
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 1fr 1fr;
 			gap: 50px;
-			margin: 0 0 0 160px;
+			margin: 89px 0 0 0px;
 		}
 	}
 
