@@ -309,6 +309,15 @@ h6 {
           align-items: center;
 }
 
+.header-menu__list :hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 @media (max-width: 767px) {
   .header-menu__list {
     display: none;
@@ -532,6 +541,10 @@ h6 {
 
 .button:hover {
   background: #f3c560;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .button:active {
@@ -539,6 +552,9 @@ h6 {
   top: 2px;
   -webkit-box-shadow: 0px 3px 0px #c4c4c4;
           box-shadow: 0px 3px 0px #c4c4c4;
+  -webkit-transition: all 0.1s ease 0s;
+  -o-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
 }
 
 .footer {
@@ -564,7 +580,7 @@ h6 {
     position: absolute;
     top: 0;
     left: -100%;
-    width: 300px;
+    max-width: 300px;
     height: 800px;
     background: #333333;
     -webkit-transition: left 0.3s ease 0s;
@@ -674,6 +690,9 @@ h6 {
 }
 
 .footer-content__info a:active {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   -webkit-transform: scale(1.2, 1.2);
       -ms-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
@@ -715,11 +734,18 @@ h6 {
 
 .footer-content__insta:hover {
   color: #f1b637;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 767px) {
   .footer-content__insta {
     font-size: 45px;
+    color: #ffffff;
   }
 }
 
@@ -734,6 +760,12 @@ h6 {
 
 .footer-content__facebook:hover {
   color: #ffffff;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 767px) {
@@ -754,6 +786,12 @@ h6 {
 
 .footer-content__vk:hover {
   color: #ffffff;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 767px) {
@@ -773,6 +811,12 @@ h6 {
 
 .footer-content__youtube:hover {
   color: #ffffff;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 767px) {
@@ -1139,6 +1183,12 @@ h6 {
 
 .main-container2__logo a:hover {
   background: url(../img/main/logo.png) no-repeat;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 1370px) {
